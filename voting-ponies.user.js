@@ -4,7 +4,7 @@
 // @match       http://*.reddit.com/*
 // @match       https://*.reddit.com/*
 // @grant       none 
-// @version     2.2
+// @version     2.3
 // ==/UserScript==
 
 function votingPonies($){
@@ -106,7 +106,8 @@ function votingPonies($){
 			src: image.walk, 
 			alt: '', 
 			css: {
-				position: 'absolute'
+				position: 'absolute', 
+				pointerEvents: 'none'
 			}
 		}).appendTo('body').offset({
 			top: $t.parent().offset().top - 30, 
