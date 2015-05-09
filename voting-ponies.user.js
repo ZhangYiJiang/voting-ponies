@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name        Voting Ponies 
 // @namespace   yijiang
-// @include     http://www.reddit.com/
-// @include     http://www.reddit.com/*
+// @match       http://*.reddit.com
+// @match       http://*.reddit.com/*
+// @match       https://*.reddit.com
+// @match       https://*.reddit.com/*
 // @grant       none 
-// @version     2.1
+// @version     2.2
 // ==/UserScript==
 
 function votingPonies($){
