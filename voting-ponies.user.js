@@ -1,9 +1,7 @@
 // ==UserScript==
 // @name        Voting Ponies 
 // @namespace   yijiang
-// @match       http://*.reddit.com
 // @match       http://*.reddit.com/*
-// @match       https://*.reddit.com
 // @match       https://*.reddit.com/*
 // @grant       none 
 // @version     2.2
