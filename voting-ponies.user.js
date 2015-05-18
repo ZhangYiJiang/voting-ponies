@@ -4,7 +4,7 @@
 // @match       http://*.reddit.com/*
 // @match       https://*.reddit.com/*
 // @grant       none 
-// @version     2.4
+// @version     2.5
 // ==/UserScript==
 
 function votingPonies($){
@@ -107,13 +107,14 @@ function votingPonies($){
 			alt: '', 
 			css: {
 				position: 'absolute', 
-				pointerEvents: 'none'
+				pointerEvents: 'none', 
+				zIndex: 10000000
 			}
 		}).appendTo('body').offset({
 			top: $t.parent().offset().top - 30, 
 			left: $t.offset().left + 160 + $t.outerWidth() / 2
 		})
-		// Fade in anumation
+		// Fade in animation
 		.hide().fadeIn({ duration: 200, queue: false })
 		// 1.5x walk cycle, 200px distance in 1.0 second
 		.animate({ left: '-=200px' }, 1000, 'linear', function(){
